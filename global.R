@@ -15,9 +15,11 @@ library(globe4r)
 library(OweatherR)
 library(ggmap)
 
-key <- "AIzaSyC-L1JqEFQyWuwMiflGyA-8HRMi8K31noM"
+# Google maps API token
+key <- "XXXXXXXXXXXXXXXXXXXXXXX"
 register_google(key)
-set_weather_key("7ade3673d5e34cd670eaeeae0209c16d")
+# Openweather API Token
+set_weather_key("XXXXXXXXXXXXXXXXXXXXXXX")
 
 source("data.R")
 source("components.R")
