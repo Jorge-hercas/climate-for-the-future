@@ -3,6 +3,8 @@ Shiny contest 2024 App
 
 The purpose of the app is to provide users with an intuitive and accessible tool to visualize data related to climate change and current weather conditions in their locality. By integrating interactive charts, maps, and other visual elements, the app allows users to better understand how climate patterns are changing over time. It also offers real-time information on current weather conditions, such as temperature, wind speed, etc, helping users make informed decisions about their daily activities and promoting greater environmental awareness.
 
+You will see temperature anomalies year by year, as well as a breakdown by month (by selecting it in the main plot) and country. In the second panel you will see current and future temperature data for your location, simply by writing your address.
+
 The current app it's using the [OweatherR](https://github.com/Jorge-hercas/OweatherR) library developed by me, to connect to the OpenWeather API.
 
 App link: https://jorgehcas1998.shinyapps.io/climate-for-the-future/
