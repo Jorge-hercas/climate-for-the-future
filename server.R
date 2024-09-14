@@ -309,8 +309,6 @@ function(input, output, session){
   
   observeEvent(input$direction,{
     
-    req(coordenadas())
-    
     update_numeric_input(session, "lat", value = coordenadas()$lat)
     update_numeric_input(session, "lng", value = coordenadas()$lon)
     
@@ -349,8 +347,6 @@ function(input, output, session){
     
     color <- if_else(input$theme == "dark","#18181B", "#fff")
     inv_color <- if_else(input$theme == "dark", "#fff", "#18181B")
-    
-    req(temperaturas_data())
     
     temperaturas_data() |> 
       reactable(
@@ -431,8 +427,6 @@ function(input, output, session){
   
   observeEvent(input$temp_find,{
     
-    req(bounds())
-    
     mapboxer_proxy("map") |>
       fit_bounds(bounds()) |>
       update_mapboxer()
@@ -451,8 +445,6 @@ function(input, output, session){
   
   
   output$grafico_temperatura <- renderEcharts4r({
-    
-    req(temperaturas_data())
     
     x <- temperaturas_data()
     
